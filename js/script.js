@@ -20,11 +20,43 @@
 
 //GLOBAL VARIABLES
 
-
-
 //FUNCTIONS
+$(document).ready(function() {
+ $("button").click(function() {
+        var userInput = ‘Rock’;
+userInput = userInput.toLowerCase();
 
+function ComputerChoice() {
+Math.floor(Math.random() * 3);
+if  (ComputerChoice = 0) {return ‘rock’};
+if (ComputerChoice = 1) {return ‘paper’};
+if (ComputerChoice = 2) {return ‘scissors’};
+}
 
-
+function determineWinner(userChoice, computerChoice) {
+if (userChoice === computerChoice) {
+return ‘tie’;
+}
+if (userChoice === ‘rock’) {
+if (computerChoice === ‘paper’) {
+return ‘computer wins’
+}
+else {return ‘human wins’}
+}
+if (userChoice === ‘paper’) {
+if (computerChoice === ‘scissors’) {
+return ‘computer wins’
+}
+else {return ‘ winner’}
+}
+if (userChoice === ‘scissors’) {
+if (computerChoice === ‘rock’) {
+return ‘computer wins’}
+else {return ‘winner’}
+}
+}
+       
+    });
+});
 // DOCUMENT READY FUNCTION
 
